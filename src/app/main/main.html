@@ -1,0 +1,26 @@
+  <yemot-main
+    [logoPath]="logoPath"
+    [pages]="routes"
+    [topHeaderText]="topHeaderText | translate"
+    [userData]="userData"
+    [showNotes]="false"
+    [showDefinitionsButton]="true"
+    [definitionsButtonIcon]="'additives'"
+    definitionsButtonText="טקסט כפתור"
+    (onLogout)="onLogoutClick()"
+    [profileTemplate]="profileTemplate"
+    [topHeaderTemplate]="topHeaderTemplate"
+    [bottomTemplate]="bottomTemplate"
+    ></yemot-main>
+
+  <ng-template #profileTemplate>
+    <div>כאן ניתן להוסיף מה שרוצים שיופיע בפרופיל</div>
+  </ng-template>
+
+  <ng-template #topHeaderTemplate>
+    <div>כאן ניתן להוסיף מה שרוצים שיופיע בשורת הכותרת</div>
+  </ng-template>
+
+  <ng-template #bottomTemplate>
+    <div>כאן ניתן להוסיף מה שרוצים שיופיע בתחתית הסייד פאנל</div>
+  </ng-template>
