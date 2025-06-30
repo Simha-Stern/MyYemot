@@ -1,8 +1,35 @@
-<div>
-  <div *ngFor="let project of myProjects" class="circle">
-    <div class="circle-content">
-      <span class="circle-text">{{ project.type }}</span>
-      <span class="circle-number">{{ project.name }}</span>
+<div class="home-container">
+  <div class="image-section">
+    <img
+      src="https://d3m9l0v76dty0.cloudfront.net/system/photos/15681802/original/d20a09cc18ba9d7f01c9547e3a48ebe1.png"
+      alt="Profile Image"
+      class="fixed-image"
+    />
+  </div>
+
+  <div class="content-section">
+    <div class="projects-section">
+      <p class="section-title">הפרוייקטים שלי</p>
+      <div class="projects-grid" id="myProjectsGrid">
+        <div *ngFor="let project of myProjects" class="circle">
+          <div class="circle-content">
+            <span class="circle-text">{{ project.type }}</span>
+            <span class="circle-number">{{ project.name }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-section">
+      <p class="section-title">פרוייקטים חדשים</p>
+      <div class="projects-grid" id="newProjectsGrid">
+        <div *ngFor="let project of newProjects" class="circle">
+          <div class="circle-content">
+            <span class="circle-text">{{ project.type }}</span>
+            <span class="circle-icon">{{ project.icon }}</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
