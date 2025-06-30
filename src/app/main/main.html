@@ -1,16 +1,21 @@
-  <yemot-main
-    [logoPath]="logoPath"
-    [pages]="routes"
-    [topHeaderText]="topHeaderText | translate"
-    [userData]="userData"
-    [showNotes]="false"
-    (onLogout)="onLogoutClick()"
-    [profileTemplate]="profileTemplate"
-    [showLanguageSelector]="true"
-    >
-  <Header></Header>
-  </yemot-main>
+<yemot-main
+  [logoPath]="logoPath"
+  [pages]="routes"
+  [topHeaderText]="topHeaderText | translate"
+  [userData]="userData"
+  [showNotes]="false"
+  (onLogout)="onLogoutClick()"
+  [profileTemplate]="profileTemplate"
+  [showLanguageSelector]="true"
+  [bottomTemplate]="bottomTemplate"
+  >
+</yemot-main>
 
-  <ng-template #profileTemplate>
-    <div>כאן ניתן להוסיף מה שרוצים שיופיע בפרופיל</div>
-  </ng-template>
+<ng-template #profileTemplate>
+  <div>כאן ניתן להוסיף מה שרוצים שיופיע בפרופיל</div>
+</ng-template>
+
+
+<ng-template #bottomTemplate>
+  <Header></Header>
+</ng-template>

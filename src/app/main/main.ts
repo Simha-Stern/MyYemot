@@ -2,17 +2,18 @@ import { Component } from '@angular/core';
 import { RoutePage } from '@yemot/yemot-design';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.html',
+  selector: 'app-header',
   standalone: false,
+  templateUrl: './main.html',
   styleUrl: './main.css',
 })
 export class Main {
+  protected title = 'yemot';
   routes: RoutePage[] = [
     {
       text: 'בית',
       icon: 'online',
-      path: 'demo',
+      path: 'home',
       // subRoutes: [
       //   {
       //     text: 'כלים',
@@ -24,22 +25,22 @@ export class Main {
     {
       text: 'הפרוייקטים שלי',
       icon: 'online',
-      path: 'icons',
+      path: 'my-projects',
     },
     {
       text: 'תשלומים וחבילות',
       icon: 'online',
-      path: 'guide',
+      path: 'payments-and-packages',
     },
     {
       text: 'הודעות',
       icon: 'online',
-      path: 'icons',
+      path: 'messages',
     },
     {
       text: 'יצירת קשר',
       icon: 'online',
-      path: 'guide',
+      path: 'contact',
     },
   ];
 
