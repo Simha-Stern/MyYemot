@@ -4,7 +4,7 @@ type Projects = {
   id: string;
   type: string;
   name: string;
-  fhoneNumber: string;
+  phoneNumber: string;
 };
 
 type NewProjects = {
@@ -27,61 +27,61 @@ export class Home {
       id: '1',
       type: 'מערכת תוכן',
       name: 'דרך תבונה',
-      fhoneNumber: '03-313-2222',
+      phoneNumber: '03-313-2222',
     },
     {
       id: '2',
       type: 'מערכת תוכן',
       name: 'תבונה',
-      fhoneNumber: '03-313-2222',
+      phoneNumber: '03-313-2222',
     },
     {
       id: '3',
       type: 'מערכת תוכן',
       name: 'תבונה',
-      fhoneNumber: '03-313-2222',
+      phoneNumber: '03-313-2222',
     },
     {
       id: '4',
       type: 'מערכת תוכן',
       name: 'תבונה',
-      fhoneNumber: '03-313-2222',
+      phoneNumber: '03-313-2222',
     },
     {
       id: '5',
       type: 'מערכת תוכן',
       name: 'תבונה',
-      fhoneNumber: '03-313-2222',
+      phoneNumber: '03-313-2222',
     },
     {
       id: '6',
       type: 'מערכת תוכן',
       name: 'תבונה',
-      fhoneNumber: '03-313-2222',
+      phoneNumber: '03-313-2222',
     },
     {
       id: '7',
       type: 'מערכת תוכן',
       name: 'תבונה',
-      fhoneNumber: '03-313-2222',
+      phoneNumber: '03-313-2222',
     },
     {
       id: '8',
       type: 'מערכת תוכן',
       name: 'תבונה',
-      fhoneNumber: '03-313-2222',
+      phoneNumber: '03-313-2222',
     },
     {
       id: '9',
       type: 'מערכת תוכן',
       name: 'תבונה',
-      fhoneNumber: '03-313-2222',
+      phoneNumber: '03-313-2222',
     },
     {
       id: '10',
       type: 'מערכת תוכן',
       name: 'תבונה',
-      fhoneNumber: '03-313-2222',
+      phoneNumber: '03-313-2222',
     },
   ];
 

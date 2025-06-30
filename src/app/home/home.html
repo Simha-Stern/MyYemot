@@ -11,11 +11,11 @@
     <div class="projects-section">
       <p class="section-title">הפרוייקטים שלי</p>
       <div class="projects-grid" id="myProjectsGrid">
-        <div *ngFor="let project of myProjects" class="circle">
-          <div class="circle-content">
-            <span class="circle-text">{{ project.type }}</span>
-            <span class="circle-number">{{ project.name }}</span>
-          </div>
+        <div *ngFor="let project of myProjects" class="circle-content">
+          <div class="circle"></div>
+          <p class="project-text">{{ project.type }}</p>
+          <span class="project-text">{{ project.name }}</span>
+          <span class="project-text">{{ project.phoneNumber }}</span>
         </div>
       </div>
     </div>
