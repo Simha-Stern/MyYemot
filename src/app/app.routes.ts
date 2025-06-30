@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { Main } from './main/main';
-import { Header } from './header/header';
 import { MyProjects } from './my-projects/my-projects';
 import { Messages } from './messages/messages';
 import { Contact } from './contact/contact';

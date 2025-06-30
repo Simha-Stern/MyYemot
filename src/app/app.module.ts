@@ -10,10 +10,10 @@ import {
   provideHttpClient,
   withInterceptorsFromDi,
 } from '@angular/common/http';
-import { Header } from './header/header';
+import { SideButtons } from './side-buttons/side-buttons';
 
 @NgModule({
-  declarations: [App, Main, Header],
+  declarations: [App, Main, SideButtons],
   imports: [
     BrowserModule,
     YemotDesignMainModule.forRoot([]),
