@@ -20,6 +20,8 @@ type NewProjects = {
   styleUrl: './home.css',
 })
 export class Home {
+  constructor() {}
+
   myProjects: Projects[] = [
     {
       id: '1',

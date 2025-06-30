@@ -11,15 +11,19 @@ import {
   withInterceptorsFromDi,
 } from '@angular/common/http';
 import { SideButtons } from './side-buttons/side-buttons';
+import { CommonModule } from '@angular/common';
+import { Home } from './home/home';
 
 @NgModule({
-  declarations: [App, Main, SideButtons],
+  declarations: [App, Main, SideButtons, Home],
   imports: [
     BrowserModule,
     YemotDesignMainModule.forRoot([]),
     RouterModule.forRoot(routes),
+    CommonModule,
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [App],
 })
+
 export class AppModule {}
