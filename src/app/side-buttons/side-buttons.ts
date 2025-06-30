@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './side-buttons.html',
   styleUrl: './side-buttons.css',
 })
-export class SideButtons {}
+export class SideButtons {
+  agentData = {
+    firstName: 'שמואל',
+    lastName: 'ווסרמן',
+    userImage: '../assets/images/man_white.png',
+  };
+}
