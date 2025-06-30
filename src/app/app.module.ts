@@ -10,9 +10,10 @@ import {
   provideHttpClient,
   withInterceptorsFromDi,
 } from '@angular/common/http';
+import { Header } from './header/header';
 
 @NgModule({
-  declarations: [App, Main],
+  declarations: [App, Main, Header],
   imports: [
     BrowserModule,
     YemotDesignMainModule.forRoot([]),

@@ -5,62 +5,51 @@ import { RoutePage } from '@yemot/yemot-design';
   selector: 'app-main',
   templateUrl: './main.html',
   standalone: false,
-  styleUrl: './main.css'
+  styleUrl: './main.css',
 })
 export class Main {
-routes: RoutePage[] = [
-
+  routes: RoutePage[] = [
     {
-      text: 'רכיבים',
-      icon: 'additives',
+      text: 'בית',
+      icon: 'online',
       path: 'demo',
-      subRoutes: [
-        {
-          text: 'כפתורים',
-          icon: 'additives',
-          path: 'buttons'
-        },
-        {
-          text: 'שדות קלט',
-          icon: 'additives',
-          path: 'form-inputs'
-        },
-        {
-          text: 'בחירה',
-          icon: 'additives',
-          path: 'selection'
-        },
-        {
-          text: 'ניווט',
-          icon: 'additives',
-          path: 'navigation'
-        },
-        {
-          text: 'כלים',
-          icon: 'additives',
-          path: 'utility'
-        },
-      ]
+      // subRoutes: [
+      //   {
+      //     text: 'כלים',
+      //     icon: 'additives',
+      //     path: 'utility',
+      //   }
+      // ],
     },
     {
-      text: 'אייקונים',
-      icon: 'info-gray',
-      path: 'icons'
+      text: 'הפרוייקטים שלי',
+      icon: 'online',
+      path: 'icons',
     },
     {
-      text: 'מדריך התקנה',
-      icon: 'file',
-      path: 'guide'
-    }
+      text: 'תשלומים וחבילות',
+      icon: 'online',
+      path: 'guide',
+    },
+    {
+      text: 'הודעות',
+      icon: 'online',
+      path: 'icons',
+    },
+    {
+      text: 'יצירת קשר',
+      icon: 'online',
+      path: 'guide',
+    },
   ];
 
-  logoPath: string | undefined = '/assets/images/yemot-logo.png';
-  topHeaderText: string = 'Yemot-design demo';
+  logoPath: string | undefined = '../assets/images/yemot-logo.png';
   userData = {
     firstName: 'משתמש',
     lastName: 'לדוגמה',
-    // userImage: '/assets/images/man_white.jpg'
-  }
+    userImage: '../assets/images/man_white.png',
+  };
+  topHeaderText: string = `שלום ${this.userData.firstName} ${this.userData.lastName}`;
 
   onLogoutClick() {
     console.log('Logout clicked');
